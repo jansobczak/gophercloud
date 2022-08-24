@@ -31,6 +31,7 @@ Example to Create Cluster Template
 		FlavorID:            "m1.small",
 		MasterLBEnabled:     &boolTrue,
 		DNSNameServer:       "8.8.8.8",
+		Hidden:              "&boolFalse,
 	}
 
 	clustertemplate, err := clustertemplates.Create(serviceClient, createOpts).Extract()
